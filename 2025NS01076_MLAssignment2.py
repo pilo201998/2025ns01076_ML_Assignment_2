@@ -41,7 +41,7 @@ st.set_page_config(
 
 st.title("Early Warning System for Student Performance")
 st.markdown(
-    "**ML Assignment 2 | Student ID: 2025NS01066**  \n"
+    "**ML Assignment 2 | Student ID: 2025NS01076**  \n"
     "Upload `StudentPerformance_Dataset.csv` to run the full pipeline."
 )
 st.divider()
