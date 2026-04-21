@@ -1,7 +1,7 @@
 """
-2025NS01066 — ML Assignment 2
+2025NS01076 — ML Assignment 2
 Early Warning System for Student Performance
-Streamlit App — exact equivalent of 2025NS01066_MLAssignment2.ipynb
+Streamlit App — exact equivalent of 2025NS01076_MLAssignment2.ipynb
 """
 
 import streamlit as st
@@ -197,7 +197,7 @@ st.subheader("3.2 Correlation Heatmap")
 fig, ax = plt.subplots(figsize=(9, 6))
 sns.heatmap(
     df_processed.corr(), annot=True, fmt='.2f',
-    cmap='coolwarm', center=0, ax=ax,
+    cmap='twilight', center=0, ax=ax,
     linewidths=0.5, annot_kws={'size': 9}
 )
 ax.set_title('Feature Correlation Heatmap', fontsize=13, fontweight='bold', pad=12)
@@ -764,7 +764,7 @@ buf.seek(0)
 st.download_button(
     label="Download model_artifacts.pkl",
     data=buf,
-    file_name="2025NS01066_MLAssignment2_ModelArtifacts.pkl",
+    file_name="2025NS01076_MLAssignment2_ModelArtifacts.pkl",
     mime="application/octet-stream",
 )
 st.divider()
