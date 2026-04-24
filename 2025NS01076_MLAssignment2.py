@@ -225,8 +225,8 @@ for i, feat in enumerate(num_feats):
         patch_artist=True,
         medianprops=dict(color='black', linewidth=2.5)
     )
-    bp['boxes'][0].set_facecolor('#e74c3c')
-    bp['boxes'][1].set_facecolor('#2ecc71')
+    bp['boxes'][0].set_facecolor('#1b0a08')
+    bp['boxes'][1].set_facecolor('#db82b9')
     for j, grp in enumerate([df[df['Pass']==0][feat], df[df['Pass']==1][feat]]):
         axes[i].plot(j+1, grp.mean(), 'D', color='white', markersize=7, zorder=5,
                      markeredgecolor='black', markeredgewidth=1)
@@ -635,7 +635,7 @@ coaching_analysis = df.groupby('Extra_Coaching')['Pass'].agg(['mean','count']).r
 bars_c = axes[1].bar(
     [coaching_labels[k] for k in coaching_analysis['Extra_Coaching']],
     coaching_analysis['mean'] * 100,
-    color=['#e74c3c','#2ecc71'], edgecolor='white', width=0.4
+    color=['#fd79a8','#008080'], edgecolor='white', width=0.4
 )
 for bar, (_, row) in zip(bars_c, coaching_analysis.iterrows()):
     axes[1].text(bar.get_x()+bar.get_width()/2, bar.get_height()+1.5,
