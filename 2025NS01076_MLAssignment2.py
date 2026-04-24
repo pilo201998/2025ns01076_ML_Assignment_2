@@ -510,7 +510,7 @@ st.subheader("5.3 Confusion Matrices")
 
 def plot_cm(ax, y_true, y_pred, model_name):
     cm = confusion_matrix(y_true, y_pred)
-    sns.heatmap(cm, annot=True, fmt='d', cmap='viridis', cbar=False, ax=ax,
+    sns.heatmap(cm, annot=True, fmt='d', cmap='twilight', cbar=False, ax=ax,
                 xticklabels=['Fail', 'Pass'], yticklabels=['Fail', 'Pass'])
     ax.set_title(model_name, fontweight='bold', fontsize=10)
     ax.set_xlabel('Predicted')
