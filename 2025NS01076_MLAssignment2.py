@@ -235,7 +235,7 @@ for i, feat in enumerate(num_feats):
 axes[5].axis('off')
 axes[5].text(0.5, 0.5, 'Diamond (◆) = Mean\nBox = IQR\nLine = Median',
              ha='center', va='center', fontsize=10,
-             bbox=dict(boxstyle='round,pad=0.5', facecolor='lightyellow', edgecolor='gray'))
+             bbox=dict(boxstyle='round,pad=0.5', facecolor='blue', edgecolor='gray'))
 fig.suptitle('Feature Distributions — Pass vs Fail', fontsize=13, fontweight='bold')
 plt.tight_layout()
 st.pyplot(fig)
